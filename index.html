@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <!-- CSS-FILES -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+    <section class="crud py-5 ">
+        <div class="container">
+            <div class="product bg-light p-4 rounded shadow-sm">
+                <h1 class="mb-5 text-center text-primary fw-bold">Add New Product</h1>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="productName" placeholder="Product Name">
+                    <label for="productName">Product Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="productPrice" placeholder="Product Price">
+                    <label for="productPrice">Product Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="productCategory" placeholder="Product Category">
+                    <label for="productCategory">Product Category</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="file" accept="image/*" class="form-control" id="productImage"
+                        placeholder="Product Image">
+                    <label for="productImage">Product Image</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea id="productDescription" class="form-control" placeholder="Product Description"></textarea>
+                    <label for="productDescription">Product Description</label>
+                </div>
+
+                <div class="d-grid gap-3 mb-3">
+                    <button class="btn btn-primary w-100" onclick="addProduct()" id="addProduct">Add Product</button>
+                    <button class="btn btn-danger w-100" onclick="deleteAllProducts()">Delete All</button>
+                </div>
+
+                <div>
+                    <input type="text" id="search" class="form-control" placeholder="Search" onkeyup="searchProduct(this.value) ;
+              ">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="text-center text-success fw-bold mb-4">Product List</h2>
+            <div class="row g-4" id="list">
+                <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-img">
+                  <img src="./Imgs/${productContainer[i].image}" alt="hard">
+                </div>
+                <div class="card-body">
+                  <h2>${productContainer[i].name}</h2>
+                  <hr>
+                  <h3>productPrice: ${productContainer[i].price}</h3>
+                  <hr>
+                  <h4>productCategory: ${productContainer[i].category}</h4>
+                  <hr>
+                  <p>productDescription: ${productContainer[i].description}</p>
+                </div>
+                <div class="card-buttons mt-3 text-center">
+                  <button class="btn btn-danger w-75 mb-3"><i class="fa-solid fa-trash"></i></button>
+                  <button class="btn btn-warning w-75 mb-3"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+              </div>
+            </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- JS-FILES -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

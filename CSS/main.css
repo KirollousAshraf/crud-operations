@@ -1,0 +1,54 @@
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/* Constants */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img img {
+    height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+.card-body h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body h3,
+.card-body h4 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #777;
+}
